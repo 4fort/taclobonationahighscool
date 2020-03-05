@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<meta name="viewpoint" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="viewpoint" content="width=device-width, initial-scale=1, minimum-scale=1,user-scalable=0'">
 <head>
 	<title>Taclobo National High School</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<script src="https://kit.fontawesome.com/af379d337f.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="script/parallax.min.js"></script>
 	<script type="text/javascript">
 		$(window).on('scroll', function(){
 			if ($(window).scrollTop()){
@@ -46,7 +48,7 @@
 			<li><a href="about.html" class="nav-buttons">About</a></li>
 			<li><a href="shs.html" class="nav-buttons">Tracks</a></li>
 			<!--<li><a href="#" class="nav-buttons">Events</a></li>-->
-			<li><a href="#" class="nav-buttons">Contact Us</a></li>
+			<li><a href="contact-alt.html" class="nav-buttons">Contact Us</a></li>
 			<li role="separator" class="nav-separator" id="nav-auth"></li>
 			<li><a href="#sec3" class="auth" onclick="register()"><span class="sign-up" id="nav-auth" >Sign Up</span></a></li>
 			<li><a href="#sec3" class="nav-buttons" onclick="login()" id="nav-auth" >Log In</a></li>
@@ -57,13 +59,22 @@
             <div class="line3"></div>
         </div>
 	</nav>
-	<section class="sec1">
-		<h2>
-			TNHS
-		</h2>
-		<p>
-			taclobo national high school
-		</p>
+	<section class="sec1" data-parallax="scroll" data-z-index="-100" data-image-src="images/main-bg2.jpg">
+        <div class="content-sec1-main">
+            <div class="sec1-center-text">
+                <h2>
+                    TNHS
+                </h2>
+                <p>
+                    taclobo national high school
+                </p>
+            </div>
+        </div>
+	<div class="scroll-downs">
+		<div class="mousey">
+			<div class="scroller"></div>
+		</div>
+	</div>
 	</section>
 		<div class="int-select">
 			<div class="int-selector1">
@@ -104,6 +115,63 @@ city roads.
 		</div>
 		</div>
 <!-- //FIRST SECTION -->
+<!-- EVENTS -->
+   <div class="blogs">
+   <h2>EVENTS</h2>
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <a href="#"><img src="images/blog1-thumbnail.jpg"></a> 
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Monday</span>
+                <span>February 3, 2020</span>
+            </div>
+            <h1 class="blog-post__title">no more MultiPURPOSE area?</h1>
+            <p class="blog-post__text">
+                Currently the multipurpose area is being renovated or reconstructed?
+            </p>
+            <a href="#" class="blog-post__cta">Read More</a>
+        </div>
+    </div>
+<!--  SECOND BLOG  -->
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <a href="#"><img src="images/blog2-thumbnail.jpg"></a>
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Tuesday</span>
+                <span>Jan 14, 2020</span>
+            </div>
+            <h1 class="blog-post__title">TNHS Celebrating Sinulog</h1>
+            <p class="blog-post__text">
+                Taclobo National High School(TNHS) is celebrating the Sinulog Festival 2k20. Grade 9 students from different sections are the only participants which was graded t...
+            </p>
+            <a href="#" class="blog-post__cta">Read More</a>
+        </div>
+    </div>
+<!--  //SECOND BLOG  -->
+<!-- THIRD BLOG -->
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <a href="#"><img src="images/blog2-thumbnail.jpg"></a> 
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Tuesday</span>
+                <span>Jan 14, 2020</span>
+            </div>
+            <h1 class="blog-post__title">TNHS Celebrating the Sinulog</h1>
+            <p class="blog-post__text">
+                Taclobo National High School(TNHS) is celebrating the Sinulog Festival 2k20. Grade 9 students from different sections are the only participants which was graded t...
+            </p>
+            <a href="#" class="blog-post__cta">Read More</a>
+        </div>
+    </div>
+<!-- //THIRD BLOG -->
+    </div>
+<!-- //EVENTS -->
 <!-- SECOND SECTION -->
 	<div class="sec2"></div>
 		<div class="content-sec2">
@@ -162,18 +230,26 @@ city roads.
 						</label>
 					</div>
 					<div class="form-pass">
-						<input type="Password" name="pass" class="input-field" required>
+						<input type="Password" name="pass" id="form-pass" class="input-field" required>
 						<label for="pass" class="label-pass">
 							<span class="userpass-pass">Password</span>
+                            <span class="form-eye" onclick="passVisibility()">
+                                <i id="pass-show" class="fa fa-eye"></i>
+                            </span>
 						</label>
 					</div>
 					<input type="checkbox" class="form-check-box"><span class="form-checkbox-text">Remember Password</span>
 					<button type="submit" class="form-submit-btn" onclick="popup()">Log In</button>
 				</form>
 				<form id="form-register" class="form-input-group">
-					<input type="Username" class="input-field" placeholder="User ID" required>
-					<input type="email" class="input-field" placeholder="Email ID" required>
-					<input type="Passowrd" class="input-field" placeholder="User Passowrd" required>
+					<input type="Username" class="input-field" placeholder="Username" required>
+					<input type="email" class="input-field" placeholder="E-mail address" required>
+					<input type="Password" name="pass" id="form-pass" class="input-field" placeholder="Password" required>
+                        <label for="pass">
+                            <span class="form-eye" onclick="passVisibility()">
+                                <i id="pass-show" class="fa fa-eye"></i>
+                            </span>
+                        </label>
 					<input type="checkbox" class="form-check-box" required="required"><span class="form-checkbox-text">I agree to the <a href="">Terms</a> & <a href="">Conditions</a></span>
 					<button type="submit" class="form-submit-btn" onclick="popup()">Register</button>
 				</form>
@@ -192,12 +268,13 @@ city roads.
 				<div class="contact">
 					<span><i class="fas fa-phone"></i>&nbsp; (035)421-1780 / 421-0698</span>
 					<span><i class="fas fa-mobile-alt"></i>&nbsp; 0917 668 1768 (Mrs Gurginia Carasena)</span>
-					<span><i class="fas fa-envelope"></i>&nbsp; taclobonhs@edu.com</span>
+					<span><i class="fas fa-envelope"></i>&nbsp; taclobonhs@edu.ph</span>
 				</div>
 				<div class="socials">
 					<a href="https://www.facebook.com/Taclobo-High-School-SSG-208211242571773/" target="_blank"><i class="fab fa-facebook"></i></a>
 					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
 					<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.deped.gov.ph/" target="_blank"><img src="images/DepED-Logo.png" alt=""></a>
 				</div>
 			</div>
 			<div class="footer-section links">
@@ -228,7 +305,7 @@ city roads.
 		</div>
 
 		<div class="footer-bottom">
-			&copy; taclobonhs.com  |  Designed by Dexter Fort Silva
+			&copy; taclobonhs.edu.ph  |  Designed by Dexter Fort Silva
 		</div>
 	</div>
 <!-- //FOOTER -->
@@ -258,6 +335,20 @@ city roads.
         function submitmail()
         {
             alert("failed to send mail, make sure your email is correct. error code #0069420");
+        }
+        
+        function passVisibility(){
+            var a = document.getElementById('form-pass');
+            var b = document.getElementById('pass-show');
+            
+            if(a.type === 'password'){
+                a.type = 'text';
+                b.style.color = '#6fd46f';
+            }
+            else{
+                a.type = 'password';
+                b.style.color = '#333333';
+            }
         }
 //
 //		function shsAca() {

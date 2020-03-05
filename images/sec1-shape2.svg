@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="768" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        filter: url(#filter-2);
+      }
+
+      .cls-4 {
+        filter: url(#filter-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="4.719" y1="1124" x2="1375" y2="1124" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2294c3"/>
+      <stop offset="1" stop-color="#2dfd4c"/>
+    </linearGradient>
+    <filter id="filter" x="1192" y="1008.22" width="284.03" height="283.97" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="1192" y="1008.22" width="284.03" height="283.97" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjg0LjAzIiBoZWlnaHQ9IjI4My45NyIgdmlld0JveD0iMCAwIDI4NC4wMyAyODMuOTciPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNzE7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSIxNDIuMDE1IiB5MT0iMjgzLjk3IiB4Mj0iMTQyLjAxNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMTM4IiBzdG9wLWNvbG9yPSIjYzQ3OGZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjk5NSIgc3RvcC1jb2xvcj0iI2M0NzhmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjg0LjAzIiBoZWlnaHQ9IjI4My45NyIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="-108" y="188" width="212" height="212" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="-108" y="188" width="212" height="212" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjIxMiIgdmlld0JveD0iMCAwIDIxMiAyMTIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNzE7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSIyMTIiIHgyPSIyMTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjAwNSIgc3RvcC1jb2xvcj0iIzIyOTRjMyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC43OTciIHN0b3AtY29sb3I9IiMyOGY5ZDQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjk5NSIgc3RvcC1jb2xvcj0iIzI4ZjlkNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjIxMiIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="-106" y="238" width="212" height="212" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="-106" y="238" width="212" height="212" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjIxMiIgdmlld0JveD0iMCAwIDIxMiAyMTIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNzE7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSIyMTIiIHgyPSIyMTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjAwNSIgc3RvcC1jb2xvcj0iIzIyOTRjMyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC43OTciIHN0b3AtY29sb3I9IiMyOGY5ZDQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIwLjk5NSIgc3RvcC1jb2xvcj0iIzI4ZjlkNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjIxMiIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <path class="cls-1" d="M1375,738l-1,178s-45.44,258.12-425.183,258.16c-263.812.02-247.333-464.916-944.1-301.084C5,1455.13,5,1510,5,1510H1373Z" transform="translate(-7 -738)"/>
+    <path id="Polygon_1" data-name="Polygon 1" class="cls-2" d="M1437.97,1254.15l-142.02,38.04-103.96-103.94,38.05-142,142.02-38.04,103.96,103.94Z" transform="translate(-7 -738)"/>
+    <circle class="cls-3" cx="-2" cy="294" r="106"/>
+    <circle id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-4" cy="344" r="106"/>
+  </g>
+</svg>
