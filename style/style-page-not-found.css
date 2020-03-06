@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Poppins|Questrial&display=swap');
 body
 {
 	width: 100%;
@@ -910,9 +911,9 @@ span.sign-up:hover
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-	height: 100vh;
+	height: 68vh;
 	background: rgb(34,148,195);
-    background: linear-gradient(90deg, rgba(34,148,195,.99) 0%, rgba(34,195,185,.6) 50%, rgba(45,253,76,.99) 100%);
+    background: linear-gradient(90deg, rgba(34,148,195,.99) 0%, rgba(34,195,185,.7) 50%, rgba(45,253,76,.99) 100%);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -921,8 +922,8 @@ span.sign-up:hover
 .sec1:before{
     content: '';
     width: 100%;
-    height: 100vh;
-    bottom: 0px;
+    height: 68vh;
+    top: 0px;
     right: 0;
     opacity: .4;
     background: rgb(74,247,149);
@@ -930,257 +931,44 @@ span.sign-up:hover
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
-}
-.sec1 div.contact-form{
-    width: 100%;
-    padding: 100px;
-    padding-top: 125px;
-    float: left;
-}
-section div.header {
-    text-align: left;
-}
-section div.header h1{
-    position: relative;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 46px;
-    margin: 0;
-    padding: 0;
-}
-section div.header p{
-    color: #fff;
-    width: 40%;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    padding-left: 60px;
-}
-/*
-.sec1 h2
-{
-	color: #252525;
-	position: relative;
-    float: left;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10em;
-    letter-spacing: 20px;
-}
-.sec1 p
-{
-	color: #252525;
-	position: relative;
-    float: left;
-    top: 25%;
-    left: 50%;
-    transform: translate(-135%, 450%);
-    font-size: 2em;
-    text-transform: uppercase;
-}
-.scroll-downs {
-  position: absolute;
-  top: 75vh;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  
-  width :34px;
-  height: 55px;
-}
-*/
-.form{
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px 0px #00000050;
-}
-.sec1 .form-left{
-    width: 400px;
-    height: 500px;
-    position: relative;
-    margin: 2% auto;
-    background: #33333390;
-    padding: 30px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    overflow: hidden;
-    margin: 0;
-    backdrop-filter: blur(10px);
-}
-.sec1 .form-left h2, .form-right h2{
-    font-size: 2em;
-    color: #eee;
-    margin: 0;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.sec1 .form-left h2:after, .form-right h2:after{
-    content: '';
-    display: block;
-    position: absolute;
-    background: #eee;
-    width: 55px;
-    height: 1px;
-    left: 44%;
-    margin-left: 0px;
-    margin-top: 1px;
-}
-.sec1 .form-right{
-    width: 400px;
-    height: 500px;
-    position: relative;
-    margin: 2% auto;
-    background: rgb(47,207,95);
-    background: linear-gradient(-45deg, rgba(47,207,95,.4) 0%, rgba(74,247,149,.4) 90%);
-    padding: 30px;
-    overflow: hidden;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0;
-    text-align: center;
-    backdrop-filter: blur(10px);
-}
-.sec1 form{
-    font-family: 'Century Gothic';
-    display: flex;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-/*    text-align: center;*/
-}
-/*
-.first-name input{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    font-size: .95em;
-    color: #595f6e;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 0;
-    outline: none;
-    background: transparent;
-    transition: .3s;
-}
-*/
-.form-name{
-    width: 100%;
-    position: relative;
-    height: 50px;
-    margin: 30px 0;
-    overflow: hidden;
-}
-.form-name input{
-    width: 100%;
-    height: 50%;
-    color: #e6e8ea;
-    padding-top: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background: none;
-    border: none;
-    outline: none;
-}
-.form-label{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    color: #eee;
     pointer-events: none;
-    border-bottom: 2px solid #eee;
-}
-.form-label::after{
-    content: '';
     position: absolute;
-    left: 0px;
-    bottom: -2px; 
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid #27ab9a;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
 }
-.content-name{
+.pnf{
+    width: 100vw;
     position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all .3s ease;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #343434;
 }
-.form-name input:focus + .form-label .content-name, .form-name input:valid + .form-label .content-name{
-    transform: translateY(-140%);
+.pnf h1{
+    font-family: 'montserrat', sans-serif;
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;background: rgb(0,20,57);
+    background: linear-gradient(90deg, rgba(0,20,57,1) 30%, rgba(68,68,68,1) 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.pnf p{
+    font-weight: 600;
+}
+.pnf a{
+    text-decoration: none;
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
     font-size: 14px;
-    color: #3de4cf;
-    font-weight: 700;
-}
-.form-name input:focus + .form-label:after, .form-name input:valid + .form-label:after{
-    transform: translateX(0%);
-}
-
-/*
-.sec1 .form-left input {
-    font-family: 'Century Gothic';
-    width: 90%;
-    margin: 20px 0;
-    padding: 10px;
-    background: rgba(0,0,0,0);
-    border: none;
-    border-bottom: 1px solid #515151;
-    outline: none;
-}
-*/
-.sec1 .form-right textarea{
-    height: 60%;
-    width: 90%;
-    border-radius: 5px;
-    caret-color: #333;
-    color: #fefefe;
-    font-family: 'Century Gothic', 'Raleway', 'Open Sans';
-    font-size: 14px;
-    resize: none;
-    margin: 20px 0;
-    padding: 10px;
-    background: rgba(256,256,256,.3);
-    border: none;
-    outline: none;
-}
-#msg{
-    margin-top: 20px;
-}
-.sec1 ::-webkit-input-placeholder{
-    font-family: 'Century Gothic', 'Raleway', 'Open Sans';
-    color: #efefef;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,{
-    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-}
-#contact-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: 'Raleway';
-    background: none;
-    border: 3px solid #eee;
-    border-radius: 50px;
-    margin-top: 10px;
-    color: #eee;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: .2s;
+    transition: .4s;
 }
-#contact-button:hover{
+.pnf a:hover{
     background: #eee;
     color: #333;
-    transition: .2s;
 }
 .mousey {
   width: 3px;
@@ -1593,6 +1381,9 @@ div.content-sec3 p
 	transition: all .2s ease;
 	text-shadow: 1px 3px 2px #000000a0;
 }
+.footer .footer-content .about .socials a img {
+    width: 50px;
+}
 .form-socal-icons a:focus
 {
 	;
@@ -1795,9 +1586,6 @@ div.content-sec3 p
 {
 	color: white;
 	transition: all .3s;
-}
-.footer .footer-content .about .socials a img {
-    width: 50px;
 }
 .footer .footer-content .links ul a
 {
