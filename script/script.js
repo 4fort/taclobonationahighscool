@@ -10,4 +10,10 @@ const body = document.getElementsByTagName('body')[0]
         navLogo.classList.toggle('nav-logo-p');
         body.classList.toggle('body');
     })
-    //animate links
+    //events slider
+$('.post-wrapper').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: $('.next'),
+    prevArrow: $('.prev'),
+});

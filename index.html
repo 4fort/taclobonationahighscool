@@ -5,10 +5,12 @@
 <head>
 	<title>Taclobo National High School</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/scrollbar.css">
 	<script src="https://kit.fontawesome.com/af379d337f.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="script/parallax.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript">
 		$(window).on('scroll', function(){
 			if ($(window).scrollTop()){
@@ -116,8 +118,41 @@ city roads.
 		</div>
 <!-- //FIRST SECTION -->
 <!-- EVENTS -->
+
+<!-- EVENTS SLIDER -->
+  <div class="page-wrapper">
+      <div class="post-slider">
+          <h1 class="slider-title">News</h1>
+          <i class="fas fa-chevron-left prev"></i>
+          <i class="fas fa-chevron-right next"></i>
+          <div class="post-wrapper">
+              <div class="post">
+                  <img src="images/blog1-thumbnail-slider.jpg" alt="" class="slider-image">
+                  <div class="post-info">
+                      <h4><a href="#">No more MULTIPURPOSE area?</a></h4>
+                  </div>
+              </div>
+              <div class="post">
+                  <img src="images/blog2-thumbnail-slider.jpg" alt="" class="slider-image">
+                  <div class="post-info">
+                      <h4><a href="#">TNHS CELEBRATING SINULOG</a></h4>
+                  </div>
+              </div>
+<!--
+              <div class="post">
+                  <img src="images/blog1-thumbnail-slider.jpg" alt="" class="slider-image">
+                  <div class="post-info">
+                      <h4><a href="#">No more MULTIPURPOSE area?</a></h4>
+                  </div>
+              </div>
+-->
+          </div>
+      </div>
+  </div>
+<!-- // EVENTS SLIDER -->
+  
    <div id="events-section" class="blogs">
-   <h2>EVENTS</h2>
+   <h2>Recent News</h2>
     <div class="blog-post">
         <div class="blog-post__img">
             <a href="#"><img src="images/blog1-thumbnail.jpg"></a> 
@@ -153,6 +188,7 @@ city roads.
     </div>
 <!--  //SECOND BLOG  -->
 <!-- THIRD BLOG -->
+<!--
     <div class="blog-post">
         <div class="blog-post__img">
             <a href="#"><img src="images/blog2-thumbnail.jpg"></a> 
@@ -169,6 +205,7 @@ city roads.
             <a href="#" class="blog-post__cta">Read More</a>
         </div>
     </div>
+-->
 <!-- //THIRD BLOG -->
     </div>
 <!-- //EVENTS -->

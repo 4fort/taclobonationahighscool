@@ -1254,11 +1254,86 @@ div.sec1-img2
 }
 /* EVENTS */
 
+.page-wrapper a:hover{
+    color: #27ab9a;
+}
+/*Events slider*/
+.post-slider{
+    position: relative;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+.post-slider .next {
+    opacity: 0.5;
+    position: absolute;
+    top: 60%;
+    right: 30px;
+    font-size: 2em;
+    color: #27ab9a;
+    cursor: pointer;
+    z-index: 1;
+    transition: .3s ease-out;
+}
+.post-slider .prev {
+    opacity: .5;
+    position: absolute;
+    top: 60%;
+    left: 30px;
+    font-size: 2em;
+    color: #27ab9a;
+    cursor: pointer;
+    transition: .3s ease-out;
+    z-index: 1;
+}
+.prev:hover, .next:hover{
+    opacity: 1;
+    transition: .3s ease-in;
+}
+.post-slider .post-wrapper{
+    width: 99vw;
+    height: 40rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post{
+    height: 40rem;
+    width: 330px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    outline: none;
+    border-radius: 25px;
+    box-shadow: 0 0px 10px #00000044;
+}
+.post-slider .post-wrapper .post .post-info{
+    height: 5rem;
+    padding: 0px 30px;
+}
+.post-slider .post-wrapper .post .post-info h4{
+    text-align: center;
+    margin: 6px 5px;
+    font-size: 2em;
+}
+.post-slider .post-wrapper .post .post-info h4 a{
+    text-decoration: none;
+    color: #6fd46f;
+}
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 90%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+/*// Events slider*/
+
 .blogs{
     display: flex;
     font-size: .9em;
     width: auto;
-    height: 130vh;
+    height: 95vh;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
@@ -1404,7 +1479,7 @@ div.content-sec2
 	margin-right: auto;
 	height: 80vh;
 }
-div.content-sec2 h2, div.blogs h2
+div.content-sec2 h2, div.blogs h2, div.post-slider h1
 {
 	text-align: center;
 	margin: 0;
@@ -1413,7 +1488,7 @@ div.content-sec2 h2, div.blogs h2
 	font-size: 48px;
 	position: relative;
 }
-div.content-sec2 h2::after, div.blogs h2:after
+div.content-sec2 h2::after, div.blogs h2:after, div.post-slider h1:after
 {
 	content: '';
 	background: #666666;

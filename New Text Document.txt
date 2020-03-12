@@ -1,3 +1,11 @@
+recreate the recent events from awa and add shapes on the events section
+
+add enroll/apply form 
+*add requirements
+*add 
+
+add current events
+
 failed to send mail, make sure your email is correct.
 error code #0069420
 
