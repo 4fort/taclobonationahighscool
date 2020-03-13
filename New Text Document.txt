@@ -1,3 +1,6 @@
+FACULTY PAGE CARD EVERY TEACHER
+
+
 recreate the recent events from awa and add shapes on the events section
 
 add enroll/apply form 
