@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900|Poppins|Questrial&display=swap');
 body
 {
 	width: 100%;
@@ -247,21 +248,21 @@ nav.black .burger{
 }
 .nav-burger-active
 {
-    transform: translatex(0%);
+    transform: translateX(0%);
 }
 .nav-burger-active_nav-color{
     background: #fff!important;
 }
 /*when burger is active TNHS alt logo is visible*/
 .nav-logo-alt_active{
-    font-size: 7.5em!important;
+    font-size: 2.8em!important;
     color: #333!important;
-    margin-top: 30%!important;
-    margin-left: 10%!important; 
+    margin-top: 25px!important;
+    margin-left: 10px!important; 
 }
 /*  burger turns X when clicked  */
     .burger__active .line1{
-        transform: rotate(45deg) translate(10px, 20px);
+        transform: rotate(45deg) translate(7px, 7px);
         transition: .3s;
     }
     .burger__active .line2{
@@ -270,7 +271,7 @@ nav.black .burger{
         transition: .3s ease;
     }
     .burger__active .line3{
-        transform: rotate(-45deg) translate(10px, -20px);
+        transform: rotate(-45deg) translate(7px, -7px);
         transition: .3s;
     }
 /*
@@ -473,10 +474,13 @@ nav.black .burger{
 @media screen and (max-width:1080px){
     nav{
         padding: 10px 30px 10px 30px;
+        height: 45px!important;
+        min-height: 50px!important;
     }
     nav.black{
-        min-height: 170px!important;
-        padding: 10px 30px 10px 30px;
+        height: 50px!important;
+        min-height: 50px!important;
+        padding: 5px 10px 5px 10px;
     }
     nav ul{
         width: 100%!important;
@@ -490,12 +494,12 @@ nav.black .burger{
         transition: transform .2s ease-in!important;
     }
     nav ul li a{
-        font-size: 4em!important;
+        font-size: 1.2em!important;
         padding: 0;
         line-height: 0!important;
     }
     nav.black ul li a{
-        font-size: 4em!important;
+        font-size: 1.2em!important;
         padding: 0;
         line-height: 0!important;
     }
@@ -514,21 +518,22 @@ nav.black .burger{
     nav .logo p{
         display: block;
         color: #33333300; /* transparent text when not scrolled */
-        font-size: 6em;
-        margin-top: 65px;
+        font-size: 2.4em;
+        margin-top: 18px;
         line-height: 0px;
         transition: all .2s;
     }
     nav.black .logo p{
         color: #333333;
-        font-size: 6em;
-        margin-top: 30%;
+        font-size: 2.5em;
+        margin-top: 18px;
         line-height: 0px;
         transition: all .2s;
     }
     nav .burger{
-        padding-top: 35px!important;
+        padding-top: 1px!important;
         padding-right: 0;
+        transform: scale(.8);
     }
     nav.black .burger{
         margin-top: 0px!important;
@@ -536,9 +541,9 @@ nav.black .burger{
     }
     nav .burger div{
         border-radius: 5px;
-        width: 70px!important;
-        height: 7px!important;
-        margin: 15px!important;
+        width: 30px!important;
+        height: 4px!important;
+        margin: 6px!important;
         transition: .3s;
     }
     .burger__active{
@@ -547,8 +552,8 @@ nav.black .burger{
     }
     nav .nav-separator{
         background: #dcdcdc;
-        height: 8px!important;
-        width: 680px!important;
+        height: 3px!important;
+        width: 200px!important;
     }
     .sec1{
         background: rgb(34,148,195);
@@ -558,10 +563,12 @@ nav.black .burger{
         background-repeat: no-repeat!important;
     }
     .sec1 h2{
-        font-size: 20em!important;
+        font-size: 6em!important;
+        letter-spacing: 10px!important;
     }
     .sec1 p{
-        font-size: 2.5em!important;
+        padding-top: 5px; 
+        font-size: 1em!important;
     }
     .scroll-downs{
         display: none!important;
@@ -569,77 +576,121 @@ nav.black .burger{
     div.int-select{
         align-items: center;
         flex-direction: column!important;
-        margin-top: 60px!important;
-        margin-bottom: 40px;
+        margin-top: 30px!important;
+        margin-bottom: 0;
     }
     div.int-select div{
-        width: 80vw!important;
+        width: 65vw!important;
         height: 25vh!important;
         margin-bottom: 40px!important;
         padding: 50px!important;
     }
     div.int-select img{
-        height: 200px!important;
+        height: 70px!important;
     }
     div.int-select h3{
-        font-size: 3em;
+        font-size: 1.2em;
     }
     div.int-select p{
-        font-size: 2.5em;
-        line-height: 60px
+        font-size: 1em;
+        line-height: 20px
     }
-    div.int-select a{
-        font-size: 2em!important;
+    div.int-select .int-selector-readmore{
+        display: none;
+        font-size: .8em!important;
     }
-    div.int-selector1{background: rgb(34,195,191);
+    div.int-selector1{
+        background: rgb(34,195,191);
         background: linear-gradient(300deg, rgba(34,195,191,.9) 0%, rgba(45,253,76,.9) 100%), url(../images/teachers2.jpg)!important;
         background-repeat: no-repeat!important;
         background-size: cover!important;
         background-position: center!important;
     }
-    div.int-selector2{background: rgb(34,195,191);
+    div.int-selector2{
+        background: rgb(34,195,191);
         background: linear-gradient(300deg, rgba(34,195,191,.9) 0%, rgba(45,253,76,.9) 100%), url(../images/history-pic.jpg)!important;
         background-repeat: no-repeat!important;
         background-size: cover!important;
         background-position: center!important;
     }
-    div.int-selector3{background: rgb(34,195,191);
+    div.int-selector3{
+        background: rgb(34,195,191);
         background: linear-gradient(300deg, rgba(34,195,191,.9) 0%, rgba(45,253,76,.9) 100%), url(../images/form-bg.jpg)!important;
         background-repeat: no-repeat!important;
         background-size: cover!important;
         background-position: center!important;
     }
     div.content{
-        margin-top: 20px;
-        padding: 10px!important;
+        margin-top: 0;
+        padding: 50px 5px!important;
         width: 100%!important;
     }
     div.content-sec1{
-        max-height: 95vh!important;
-        min-height: 95vh!important;
+        height: auto!important;
+        background: linear-gradient(45deg, rgba(34,148,195,1) 0%, rgba(34,195,185,1) 50%, rgba(45,253,76,1) 100%)!important;
+        background-size: cover;
+        position: relative;
+        border-radius: unset!important;
+    }
+    div.content-sec1:before{
+        content: '';
+        position: absolute;
+        left: 0!important;
+        top: 0!important;
+        width: 100%!important;
+        height: 4.7rem!important;
+        background: url(/images/waves/wave-large-reversed.png) center no-repeat!important;
+        background-size: cover!important;
+        opacity: 1!important;
+        z-index: 0!important;
+        pointer-events: none;
+    }
+    div.content-sec1:after{
+        content: '';
+        position: absolute;
+        left: 0!important;
+        bottom: 0!important;
+        width: 100%!important;
+        height: 4.7rem!important;
+        background: url(/images/waves/wave-large.png) center no-repeat!important;
+        background-size: cover!important;
+        opacity: 1!important;
+        z-index: 0!important;
+        pointer-events: none;
     }
     div.content h2{
-        font-size: 10em!important;
+        font-size: 1.5em!important;
         color: #333!important;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    div.content span{
+        font-size: 1.7em!important;
+        text-transform: none;
     }
     div.content h2:after{
-        height: 15px!important;
+        height: 3px!important;
         width: 50%!important;
-        margin-top: 30px!important;
+        margin-top: 5px!important;
+        margin-left: 80px!important;
         background: #333!important;
     }
     div.content p{
-        font-size: 3em!important;
+        font-size: 1em!important;
         color: #f7f7f7!important;
     }
     #second-para{
         display: none;
     }
     div.content a{
-        font-size: 2.5em!important;
+        font-size: .9em!important;
         color: #fafafa!important;
     }
     div.sec1-img2{
+        display: none!important;
+    }
+    div.page-wrapper{
         display: none!important;
     }
     div.content-sec2{
