@@ -97,7 +97,7 @@ html {
     }
 }*/
 .body{
-    position: fixed;
+/*    position: fixed;*/
     overflow-y: hidden;
 }
 nav
@@ -115,7 +115,7 @@ nav
     justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(20px);
-	z-index: 100;
+	z-index: 1000;
 }
 nav.black
 {
@@ -254,11 +254,25 @@ nav.black .burger{
 }
 /*when burger is active TNHS alt logo is visible*/
 .nav-logo-alt_active{
-    font-size: 8em!important;
+    font-size: 7.5em!important;
     color: #333!important;
     margin-top: 30%!important;
     margin-left: 10%!important; 
 }
+/*  burger turns X when clicked  */
+    .burger__active .line1{
+        transform: rotate(45deg) translate(10px, 20px);
+        transition: .3s;
+    }
+    .burger__active .line2{
+        transform: scale(0);
+        background: transparent;
+        transition: .3s ease;
+    }
+    .burger__active .line3{
+        transform: rotate(-45deg) translate(10px, -20px);
+        transition: .3s;
+    }
 /*
 .nav-logo-p{
     transform: translateY(0);
@@ -461,8 +475,7 @@ nav.black .burger{
         padding: 10px 30px 10px 30px;
     }
     nav.black{
-        min-height: 8%!important;
-        background: linear-gradient(0deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 50%)!important;
+        min-height: 170px!important;
         padding: 10px 30px 10px 30px;
     }
     nav ul{
@@ -530,20 +543,7 @@ nav.black .burger{
     }
     .burger__active{
         margin-top: -1%;
-        transform: scale(1.2);
-    }
-/*  burger turns X when clicked  */
-    .burger__active .line1{
-        transform: rotate(45deg) translate(20px, 30px);
-        transition: .3s;
-    }
-    .burger__active .line2{
-        display: none;
-        transition: .3s;
-    }
-    .burger__active .line3{
-        transform: rotate(-45deg) translate(-15px, 5px);
-        transition: .3s;
+/*        transform: scale(1.2);*/
     }
     nav .nav-separator{
         background: #dcdcdc;
@@ -552,7 +552,7 @@ nav.black .burger{
     }
     .sec1{
         background: rgb(34,148,195);
-        background: linear-gradient(45deg, rgba(34,148,195,.9) 0%, rgba(34,195,185,.8) 50%, rgba(45,253,76,.9) 100%), url(../images/main-bg2.jpg)!important;
+        background: linear-gradient(45deg, rgba(34,148,195,.9) 0%, rgba(34,195,185,.8) 50%, rgba(45,253,76,.9) 100%)!important;
         background-size: cover!important;
         background-position: center!important;
         background-repeat: no-repeat!important;
@@ -615,19 +615,18 @@ nav.black .burger{
         width: 100%!important;
     }
     div.content-sec1{
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/sec1-bg.jpg);
-        max-height: 83vh!important;
-        min-height: 83vh;
+        max-height: 95vh!important;
+        min-height: 95vh!important;
     }
     div.content h2{
         font-size: 10em!important;
-        color: #fff!important;
+        color: #333!important;
     }
     div.content h2:after{
         height: 15px!important;
         width: 50%!important;
         margin-top: 30px!important;
-        background: #f7f7f7!important;
+        background: #333!important;
     }
     div.content p{
         font-size: 3em!important;
@@ -768,7 +767,7 @@ nav.black .burger{
 /*        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);*/
         transform: translateX(100%);
         transition: transform .3s ease-in;
-        z-index: 100;
+        z-index: -100;
     }
     nav.black ul{
         box-shadow: 0px 20px 16px 0px rgba(0, 0, 0, 0.15);
@@ -873,49 +872,6 @@ nav.black .burger{
     }
 }
 */
-@media screen and (max-width:1340px){
-    nav .logo img{
-        height: 30px;
-        padding-top: 26px;
-    } 
-    nav.black .logo img{
-        height: 25px;
-        padding-top: 14px;
-    } 
-    nav .logo span{
-        font-size: 17px;
-    }
-    nav.black .logo span{
-        font-size: 15px;
-    }
-    nav ul li a{
-        font-size: 12.5px;
-    }
-    nav.black ul li a{
-        font-size: 11.5px;
-    }
-}
-@media screen and (max-width:1024px){
-    .sec1 p{
-    transform: translate(-51%, -700%) !important;
-    }
-}
-@media screen and (max-width:880px){
-    nav .logo img{
-        height: 40px !important;
-        padding-top: 19px !important;
-    } 
-    nav.black .logo img{
-        height: 35px !important;
-        padding-top: 8px !important;
-    } 
-    nav .logo span{
-        font-size: 25px !important;
-    }
-    nav.black .logo span{
-        font-size: 23px !important;
-    }
-}
 a.auth
 {
 	margin-left: 10px;

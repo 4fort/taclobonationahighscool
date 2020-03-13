@@ -5,7 +5,7 @@ const navLogo = document.getElementsByClassName('nav-logo-alt')[0]
 const burgerActive = document.getElementsByClassName('burger-active') [0]
 const body = document.getElementsByTagName('body')[0]
     //toggle nav
-    burger.addEventListener('click', () => {
+        burger.addEventListener('click', () => {
         burger.classList.toggle('burger__active');
         navLinks.classList.toggle('nav-burger-active');
         nav.classList.toggle('nav-burger-active_nav-color');
@@ -19,3 +19,4 @@ $('.post-wrapper').slick({
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
 });
+
