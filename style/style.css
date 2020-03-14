@@ -475,7 +475,7 @@ nav.black .burger{
 @media screen and (max-width:1080px){
     nav{
         padding: 10px 30px 10px 30px;
-        height: 45px!important;
+        height: 50px!important;
         min-height: 50px!important;
     }
     nav.black{
@@ -486,7 +486,7 @@ nav.black .burger{
     nav ul{
         width: 100%!important;
         height: 93vh!important;
-        top: 7vh!important;
+        top: 50px!important;
         transition: transform .2s ease-in!important;
     }
     nav.black ul{
