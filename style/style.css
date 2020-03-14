@@ -558,10 +558,11 @@ nav.black .burger{
     }
     .sec1{
         background: rgb(34,148,195);
-        background: linear-gradient(45deg, rgba(34,148,195,.9) 0%, rgba(34,195,185,.8) 50%, rgba(45,253,76,.9) 100%)!important;
+        background: linear-gradient(45deg, rgba(34,148,195,.9) 0%, rgba(34,195,185,.8) 50%, rgba(45,253,76,.9) 100%), url(../images/main-bg2.jpg)!important;
         background-size: cover!important;
         background-position: center!important;
         background-repeat: no-repeat!important;
+        background-attachment: fixed!important;
     }
     .sec1 h2{
         font-size: 6em!important;
@@ -756,8 +757,7 @@ nav.black .burger{
         display: none!important;
     }
     div.content-sec2{
-        max-height: 185vh!important;
-        min-height: 185vh!important;
+        height: 1700px!important;
         padding: 10px!important;
     }
     div.content-sec2 h2{
@@ -770,8 +770,9 @@ nav.black .burger{
         margin-left: -40px!important;
     }
     div.shs-tracks div{
-        width: 80vw!important;
-        height: 100%!important;
+        width: 90vw!important;
+        height: auto!important;
+        margin: 10px!important;
         padding-bottom: 50px!important;
     }
     div.shs-tracks img{
@@ -804,6 +805,9 @@ nav.black .burger{
     }
     div.content-sec3 p{
         font-size: 3em!important;
+    }
+    .footer{
+        height: 680px!important;
     }
 }
 
