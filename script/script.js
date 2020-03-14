@@ -14,8 +14,11 @@ const body = document.getElementsByTagName('body')[0]
     })
     //events slider
 $('.post-wrapper').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
+    dots: true,
+    infinite: true,
+    fade: true,
+    speed: 500,
+    cssEase: 'linear',
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
 });

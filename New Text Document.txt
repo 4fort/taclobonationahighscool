@@ -1,3 +1,109 @@
+
+
+
+NEWS THUMBNAIL SIZE SHOULD BE 180x150 px
+
+
+<!-- EVENTS -->
+
+<!-- EVENTS SLIDER -->
+  <div class="page-wrapper">
+      <div class="post-slider">
+          <h1 class="slider-title">News</h1>
+          <i class="fas fa-chevron-left prev"></i>
+          <i class="fas fa-chevron-right next"></i>
+          <div class="post-wrapper">
+<!--      MULTI       -->
+              <div class="post">
+                  <img src="images/blog1-thumbnail-slider.jpg" alt="" class="slider-image">
+                  <div class="post-info">
+                      <h4><a href="#">No more MULTIPURPOSE area?</a></h4>
+                  </div>
+              </div>
+<!--     //MULTI         -->
+<!--      SINULOG       -->
+              <div class="post">
+                  <img src="images/blog2-thumbnail-slider.jpg" alt="" class="slider-image">
+                  <div class="post-info">
+                      <h4><a href="#">TNHS CELEBRATING SINULOG</a></h4>
+                  </div>
+              </div>
+<!--     //SINULOG         -->
+<!--
+              <div class="post">
+                  <img src="images/blog1-thumbnail-slider.jpg" alt="" class="slider-image">
+                  <div class="post-info">
+                      <h4><a href="#">No more MULTIPURPOSE area?</a></h4>
+                  </div>
+              </div>
+-->
+          </div>
+      </div>
+  </div>
+<!-- // EVENTS SLIDER -->
+
+
+
+  
+   <div id="events-section" class="blogs">
+   <h2>Recent News</h2>
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <a href="#"><img src="images/blog1-thumbnail.jpg"></a> 
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Monday</span>
+                <span>February 3, 2020</span>
+            </div>
+            <h1 class="blog-post__title">no more MultiPURPOSE area?</h1>
+            <p class="blog-post__text">
+                Currently the multipurpose area is being renovated or reconstructed?
+            </p>
+            <a href="#" class="blog-post__cta">Read More</a>
+        </div>
+    </div>
+<!--  SECOND BLOG  -->
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <a href="#"><img src="images/blog2-thumbnail.jpg"></a>
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Tuesday</span>
+                <span>Jan 14, 2020</span>
+            </div>
+            <h1 class="blog-post__title">TNHS Celebrating Sinulog</h1>
+            <p class="blog-post__text">
+                Taclobo National High School(TNHS) is celebrating the Sinulog Festival 2k20. Grade 9 students from different sections are the only participants which was graded t...
+            </p>
+            <a href="#" class="blog-post__cta">Read More</a>
+        </div>
+    </div>
+<!--  //SECOND BLOG  -->
+<!-- THIRD BLOG -->
+<!--
+    <div class="blog-post">
+        <div class="blog-post__img">
+            <a href="#"><img src="images/blog2-thumbnail.jpg"></a> 
+        </div>
+        <div class="blog-post__info">
+            <div class="blog-post__date">
+                <span>Tuesday</span>
+                <span>Jan 14, 2020</span>
+            </div>
+            <h1 class="blog-post__title">TNHS Celebrating the Sinulog</h1>
+            <p class="blog-post__text">
+                Taclobo National High School(TNHS) is celebrating the Sinulog Festival 2k20. Grade 9 students from different sections are the only participants which was graded t...
+            </p>
+            <a href="#" class="blog-post__cta">Read More</a>
+        </div>
+    </div>
+-->
+<!-- //THIRD BLOG -->
+    </div>
+
+
 body position: absolute; is why it transfers to the top of the page
 
 
